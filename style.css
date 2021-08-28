@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5rem 10rem;
+}
+
+body>div{
+    flex-grow: 1;
+    flex-basis: calc(100%/1);
+}
+
+/*------global declaration------*/
+p{
+    font-family:'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    padding-top: 1rem;
+    padding-bottom: 11rem;
+    font-size: 1rem;
+    
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+}
+
+button {
+    
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    font-size: .8rem;
+    
+}
+
+/*----------main content----------*/
+.container {
+    display:flex;
+    justify-content: center;
+    
+       
+}
+
+/*----------Sedan----------*/
+.sedan {
+    
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius:.5rem ;
+    padding: 4rem 4rem 1rem 4rem;
+    
+}
+
+
+
+.sedan::before{
+    content: url(./images/icon-sedans.svg);
+
+
+}
+.sedan button{
+    color:hsl(31, 77%, 52%);
+}
+
+.sedan button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    border: .2rem solid hsl(0, 0%, 95%);
+}
+
+/*----------SUV----------*/
+.suv-s {
+   
+    background-color: hsl(184, 100%, 22%);
+    padding: 4rem 4rem 1rem 4rem;
+}
+
+.suv-s::before{
+    content: url(./images/icon-suvs.svg);
+    
+    height: .1px;
+    width: 1px;
+    
+}
+
+.suv-s button{
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-s button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    border: .2rem solid hsl(0, 0%, 95%);
+}
+
+/*----------Luxury----------*/
+.luxury {
+    
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius:.5rem ;
+    border-bottom-right-radius: .5rem;
+    padding: 4rem 4rem 1rem 4rem;
+}
+
+.luxury::before{
+    content: url(./images/icon-luxury.svg);
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border: .2rem solid hsl(0, 0%, 95%);
+}
+
+
+/*----------Mobile screen----------*/
+@media only screen and (max-width: 720px){
+.container{
+    display: block;
+    padding: .5rem;
+}    
+
+.sedan {
+    
+    border-radius: 0%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    
+}
+
+.luxury {
+    
+    border-radius: 0%;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+div[class="attribution"]{
+    padding: 5rem 1rem;
+}
+
+
+}
