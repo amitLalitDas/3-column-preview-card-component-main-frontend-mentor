@@ -29,7 +29,7 @@ p{
     font-family:'Lexend Deca', sans-serif;
     color:hsla(0, 0%, 100%, 0.75);
     padding-top: 1rem;
-    padding-bottom: 11rem;
+    padding-bottom: 6rem;
     font-size: 1rem;
     
 }
@@ -89,6 +89,7 @@ button {
     background-color: hsl(31, 77%, 52%);
     color:hsl(0, 0%, 95%);
     border: .2rem solid hsl(0, 0%, 95%);
+    
 }
 
 /*----------SUV----------*/
@@ -101,8 +102,6 @@ button {
 .suv-s::before{
     content: url(./images/icon-suvs.svg);
     
-    height: .1px;
-    width: 1px;
     
 }
 
